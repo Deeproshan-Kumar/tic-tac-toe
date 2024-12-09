@@ -36,7 +36,7 @@ h1 {
 
 .game-board {
   min-height: 38rem;
-  max-width: 23rem;
+  max-width: 36rem;
   width: 100%;
   margin: auto;
 }
@@ -49,7 +49,7 @@ h1 {
 
 .game-board .board .button {
   border: 0;
-  height: 7rem;
+  height: 12rem;
   background: transparent;
   color: var(--white);
   font-size: 2.8rem;
