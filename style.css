@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --background: #1abc9c;
+  --white: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+h1 {
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 2rem;
+  font-style: 3.6rem;
+  font-family: "Satisfy", cursive;
+}
+
+.game-board {
+  min-height: 38rem;
+  max-width: 23rem;
+  width: 100%;
+  margin: auto;
+}
+
+.game-board .board {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.game-board .board .button {
+  border: 0;
+  height: 7rem;
+  background: transparent;
+  color: var(--white);
+  font-size: 2.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 300ms all ease-in-out;
+}
+
+.game-board .board .button:hover {
+  transition: 0s;
+  background: #ffffff50;
+}
+
+.game-board .board .button[disabled] {
+  pointer-events: none;
+}
+
+.game-board .board .button.border-right {
+  border-right: 0.1rem solid var(--white);
+}
+
+.game-board .board .button.border-top {
+  border-top: 0.1rem solid var(--white);
+}
+
+.game-board .board .button.marker {
+  background: #13faff;
+  color: va(--white);
+  text-shadow: 0 0 0.2rem var(--background);
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.game-info .message {
+  background: var(--white);
+  width: 100%;
+  text-align: center;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.game-info .message p {
+  color: var(--background);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.game-info button {
+  background: var(--white);
+  border: 0;
+  outline: 0;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: none;
+  cursor: pointer;
+}
