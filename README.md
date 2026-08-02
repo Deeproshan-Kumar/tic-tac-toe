@@ -2,15 +2,6 @@
 
 A simple and interactive **Tic-Tac-Toe** game built using **HTML, CSS, and JavaScript**. Play against a friend in a classic two-player game with a clean, responsive interface and instant winner detection.
 
-## 📸 Preview
-
-> Add a screenshot or GIF of the game here.
-
-```text
-assets/
-└── <img width="640" height="311" alt="image" src="https://github.com/user-attachments/assets/18cc8209-d059-457b-84a6-7a9df41b9dfa" />
-```
-
 ---
 
 ## ✨ Features
